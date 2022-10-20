@@ -8,7 +8,7 @@ module.exports = {
         citel.reply(`*Check your Pm ${tlang().greet}*`);
         await Void.sendMessage(`${citel.sender}`, {
           image: fs.readFileSync("../../lib/assets/SocialLogo 1.png"),
-          caption: `*Group Name: Secktor-Support*\n*Group Link:* https://chat.whatsapp.com/Bl2F9UTVU4CBfZU6eVnrbC`,
+          caption: `*Group Name / اسم القروب: 𝗕𝗢𝗧 𝗜𝗡𝗖*\n*Group Link:* https://chat.whatsapp.com/IJnyOohnm2Y9F6MWgruFj5`,
         });
  
     }
