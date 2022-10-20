@@ -34,7 +34,7 @@ module.exports = {
         }
         else if (/video/.test(mime)) {
             if ((quoted.msg || quoted)
-                .seconds > 20) return citel.reply("Cannot fetch videos longer than *20 Seconds*");
+                .seconds > 20) return citel.reply("Cannot fetch videos longer than *20 Seconds* لا يمكن ان تصنع ملصق اكثر من *٢٠ ثانية*");
             let media = await quoted.download();
             let sticker = new Sticker(media, {
                 pack: pack, // The pack name
@@ -53,7 +53,7 @@ module.exports = {
             });
         }
         else {
-            citel.reply("*Uhh,Please reply to any image or video*");
+            citel.reply("*Uhh,Please reply to any image or video / منشن على صوره او فيديو رجاءً *");
         }
     }
  }
