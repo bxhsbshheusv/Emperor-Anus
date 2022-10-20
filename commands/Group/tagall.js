@@ -1,7 +1,7 @@
 const { tlang,getAdmin } = require('../../lib')
 
 module.exports = {
-    name: 'tagall',
+    name: 'منشن',
     category: 'group',
     desc: 'Tags every person of group.',
     async exec(citel, Void,args,isGroup) {
@@ -13,9 +13,9 @@ module.exports = {
         if (!isAdmins) return citel.reply(tlang().admin);
         
  let textt = `
- ══✪〘   *Tag All / منشن جماعي*   〙✪══
+ ══✪〘   *منشن جماعي*   〙✪══
 
-➲ *Message / الرساله :* ${args.join(" ") ? args.join(" ") : "لا شي"}\n\n
+➲ *Message / الرساله :* ${args.join(" ") ? args.join(" ") : "لا يوجد"}\n\n
 ➲ *Author:* ${citel.pushName} 🔖
 `
         for (let mem of participants) {
