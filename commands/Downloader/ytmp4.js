@@ -5,7 +5,7 @@ const prefix = Config.prefix
 const ytdl = require('ytdl-core')
 
 module.exports = {
-    name: 'ytmp4',
+    name: 'لينك1',
     alias: ['mp4dl'],
     category: 'downloader',
     desc: 'Downloads audio from youtube.',
@@ -14,14 +14,14 @@ module.exports = {
             return `${Math.floor(Math.random() * 10000)}${ext}`;
         };
         if (!args[0]) {
-            citel.reply(`❌Please provide me a url`);
+            citel.reply(`❌اعطيني الرابط`);
             return;
         }
         try {
             let urlYt = args[0];
-            if (!urlYt.startsWith("http"))  return citel.reply(`❌ Give youtube link!`);
+            if (!urlYt.startsWith("http"))  return citel.reply(`❌ اعطيني رابط يوتيوب!`);
             let infoYt = await ytdl.getInfo(urlYt);
-            if (infoYt.videoDetails.lengthSeconds >= 1800) return citel.reply(`❌ Video file too big!`);
+            if (infoYt.videoDetails.lengthSeconds >= 1800) return citel.reply(`❌ الفيديو كبير جدا!`);
             let titleYt = infoYt.videoDetails.title;
             let randomName = getRandom(".mp4");
             
@@ -56,7 +56,7 @@ module.exports = {
           }
           Void.sendMessage(citel.chat, buttonMessage, { quoted: citel })
             } else {
-                citel.reply(`❌ File size bigger than 40mb.`);
+                citel.reply(`❌ رابط الملف اكثر من 40mb.`);
             }
             
             fs.unlinkSync(`./${randomName}`);
