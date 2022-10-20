@@ -3,7 +3,7 @@ const { prefix } = require('../../config')
 const { collection } = require('../../lib')
 
 module.exports = {
-   name: 'collection',
+   name: 'مجموع',
    category: 'game',
    desc: 'Sends user\'s total card collection.',
    async exec(citel, Void,args) {
