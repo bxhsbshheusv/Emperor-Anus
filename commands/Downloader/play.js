@@ -1,7 +1,7 @@
 const { tlang } = require('../../lib')
 const { prefix } = require('../../config')
 module.exports = {
-    name: "play",
+    name: "فيديو",
     alias: ['searchyt','ytsearch'],
     category: 'downloader',
     desc: 'Sends info about the query(of youtube video/audio).',
@@ -15,14 +15,14 @@ module.exports = {
         {
             buttonId: `${prefix}ytmp4 ${anu.url}`,
             buttonText: {
-                displayText: "► Video",
+                displayText: "► فيديو",
             },
             type: 1,
     },
         {
             buttonId: `${prefix}ytmp3 ${anu.url}`,
             buttonText: {
-                displayText: "♫ Audio",
+                displayText: "♫ موسيقى",
             },
             type: 1,
     },
@@ -35,12 +35,12 @@ module.exports = {
 ╭───────────────◆
 │⿻ *${tlang().title} Youtube Player* ✨
 │
-│⿻ *Title:* ${anu.title}
-│⿻ *Duration:* ${anu.timestamp}
-│⿻ *Viewers:* ${anu.views}
-│⿻ *Uploaded:* ${anu.ago}
-│⿻ *Author:* ${anu.author.name}
-│⿻ *Url* : ${anu.url}
+│⿻ *الاسم:* ${anu.title}
+│⿻ *وقت الفيديو:* ${anu.timestamp}
+│⿻ *مشاهده:* ${anu.views}
+│⿻ *وقت الرفع:* ${anu.ago}
+│⿻ *اخر:* ${anu.author.name}
+│⿻ *الرابط* : ${anu.url}
 ╰────────────────◆
 `,
         footer: tlang().footer,
