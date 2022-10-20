@@ -2,7 +2,7 @@ const Config = require('../../config')
 const {Sticker,createSticker,StickerTypes} = require("wa-sticker-formatter");
 
 module.exports = {
-    name: 'sticker',
+    name: 'ستيكر',
     alias: ["s"],
     category: 'sticker',
     desc: 'Makes sticker of replied image/video.',
@@ -15,7 +15,7 @@ module.exports = {
             
         if (citel.quoted) {
             let media = await citel.quoted.download();
-            citel.reply("*Processing Your request*");
+            citel.reply("*جاري معالجة طلبك*");
             let sticker = new Sticker(media, {
                 pack: pack, // The pack name
                 author: author, // The author name
