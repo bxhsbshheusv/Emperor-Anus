@@ -2,7 +2,7 @@ const { tlang,ffmpeg  } = require('../../lib')
 const fs = require('fs')
 const { exec } = require('child_process')
 module.exports = {
-    name: 'bass',
+    name: '‏تبطيء',
     category: 'audio',
     desc: 'Adds Base to the given sound [describes tones of low (also called "deep") frequency, pitch and range]',
     use: '<reply to audio>',
@@ -31,7 +31,7 @@ module.exports = {
         });
       } else
         citel.reply(
-          `Reply to the audio you want to change with*`
+          `منشن المسج يلي تبغا تغيره*`
         );
     }
  }
