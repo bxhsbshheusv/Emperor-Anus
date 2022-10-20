@@ -1,7 +1,7 @@
 const { tlang,sleep } = require('../../lib/')
 
 module.exports = {
-    name: 'block',
+    name: 'بلوك',
     category: 'owner',
     desc: 'Blocks to the quoted user.',
     async exec(citel, Void,args,isCreator) {
