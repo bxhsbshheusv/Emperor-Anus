@@ -1,7 +1,7 @@
 
 const { tlang,botpic,getAdmin } = require('../../lib')
 module.exports = {
-    name: 'hidetag',
+    name: 'مخفي',
     category: 'group',
     desc: 'Tags everyperson of group without mentioning their numbers.',
     async exec(citel, Void,args) {
