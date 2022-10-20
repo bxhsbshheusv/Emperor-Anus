@@ -2,7 +2,7 @@ const { tlang } = require('../../lib')
 const {prefix} = require('../../config')
 
 module.exports = { 
-    name: 'audio',
+    name: 'اغنيه',
     alias: ['yta','song'],
     category: 'downloader',
     desc: 'Downloads audio from youtube.',
