@@ -3,7 +3,7 @@ const canvacord = require("canvacord");
 const Levels = require("discord-xp");
 
 module.exports = {
-    name: 'rank',
+    name: 'المستوى',
     category: 'group',
     desc: 'Sends rank card of user..',
     async exec(citel, Void,args,pushname) {
