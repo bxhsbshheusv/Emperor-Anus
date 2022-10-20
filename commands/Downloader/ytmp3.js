@@ -5,7 +5,7 @@ const ytdl = require('ytdl-core')
 const prefix = Config.prefix
 
 module.exports = {
-    name: 'ytmp3',
+    name: 'لينك',
     alias: ['mp3dl'],
     category: 'downloader',
     desc: 'Downloads audio from youtube.',
@@ -14,16 +14,16 @@ module.exports = {
             return `${Math.floor(Math.random() * 10000)}${ext}`;
         };
         
-        if (!args[0]) return citel.reply(`❌ URL is empty! \nSend ${prefix}ytmp3 url`);
+        if (!args[0]) return citel.reply(`❌ الرابط خربان! \nSend ${prefix}ytmp3 url`);
         try {
             let urlYt = args[0];
             if (!urlYt.startsWith("http")) {
-                citel.reply(`❌ Give youtube link!`);
+                citel.reply(`❌ جيب لينك اليوتيوب!`);
                 return;
             }
             let infoYt = await ytdl.getInfo(urlYt);
             if (infoYt.videoDetails.lengthSeconds >= 1800) {
-                citel.reply(`❌ I can't download that long video!`);
+                citel.reply(`❌ لا استطيع تحميله لانه طويل جدت!`);
                 return;
             }
             let titleYt = infoYt.videoDetails.title;
@@ -60,7 +60,7 @@ module.exports = {
           }
           Void.sendMessage(citel.chat, buttonMessage, { quoted: citel })
             } else {
-                citel.reply(`❌ File size bigger than 40mb.`);
+                citel.reply(`❌ الملف اكثر من 40mb.`);
             }
             fs.unlinkSync(`./${randomName}`);
         } catch (e) {
