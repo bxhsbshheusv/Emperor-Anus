@@ -1,7 +1,7 @@
 const { tlang,sleep,getAdmin } = require('../../lib')
 
 module.exports = {
-    name: 'add',
+    name: 'اضافه',
     category: 'owner',
     desc: 'adds user in group',
     async exec(citel, Void,args) {
