@@ -22,13 +22,13 @@ let str = `
 ╭━━〘 `+ fancytext(Config.ownername.split(' ')[0],58) +` 〙━━──⊷`      
 str += `
 ┃ ⛥╭──────────────      
-┃ ⛥│ *User:-* ${citel.pushName}
-┃ ⛥│ *Theme:-* ${tlang().title}
-┃ ⛥│ *Prefix:-* ${Config.prefix}
-┃ ⛥│ *Owner:-* _${Config.ownername}_
-┃ ⛥│ *Commands:* _${category.length}_
-┃ ⛥│ *Uptime:* _${runtime(process.uptime())}_
-┃ ⛥│ *Mem -* _${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}_
+┃ ⛥│ *اليوزر:-* ${citel.pushName}
+┃ ⛥│ *الثيم:-* ${tlang().title}
+┃ ⛥│ *البادئة:-* ${Config.prefix}
+┃ ⛥│ *المطور:-* _${Config.ownername}_
+┃ ⛥│ *اوامر:* _${category.length}_
+┃ ⛥│ *مده التشغيل:* _${runtime(process.uptime())}_
+┃ ⛥│ *ميم -* _${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}_
 ┃ ⛥│  
 ┃ ⛥╰───────────
 ╰━━━━━━━━━━━──⊷\n`
