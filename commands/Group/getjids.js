@@ -1,7 +1,7 @@
 const { tlang,sleep } = require('../../lib/')
 
 module.exports = {
-    name: 'getjids',
+    name: 'القروبات',
     category: 'owner',
     desc: 'Sends chat id of every groups.',
     async exec(citel, Void,args,isCreator) {
