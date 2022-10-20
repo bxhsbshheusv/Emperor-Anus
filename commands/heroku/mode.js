@@ -2,7 +2,7 @@ const { tlang } = require('../../lib')
 const Config = require('../../config')
 
 module.exports = {
-   name: 'mode',
+   name: 'الوضع',
    category: 'owner',
    desc: 'Changes currnet worktype of bot.',
    async exec(citel, Void,args,isCreator) {
