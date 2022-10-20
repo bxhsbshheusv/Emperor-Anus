@@ -13,13 +13,13 @@ module.exports = {
         if (!isAdmins) return citel.reply(tlang().admin);
         
  let textt = `
- ══✪〘   *Tag All*   〙✪══
+ ══✪〘   *Tag All / منشن جماعي*   〙✪══
 
-➲ *Message :* ${args.join(" ") ? args.join(" ") : "blank"}\n\n
+➲ *Message / الرساله :* ${args.join(" ") ? args.join(" ") : "لا شي"}\n\n
 ➲ *Author:* ${citel.pushName} 🔖
 `
         for (let mem of participants) {
-            textt += `📍 @${mem.id.split("@")[0]}\n`;
+            textt += `✨ @${mem.id.split("@")[0]}\n`;
         }
         Void.sendMessage(citel.chat, {
             text: textt,
