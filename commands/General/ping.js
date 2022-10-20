@@ -6,8 +6,8 @@ module.exports = {
     desc: 'Tells ping speed of bot.',
     async exec(citel, Void) {
   var inital = new Date().getTime();
- await citel.reply('```Ping!!!```');
+ await citel.reply('```Ping!!!كم اطار ف الثانيه```');
   var final = new Date().getTime();
-     await citel.reply('*Pong*\n *' + (final - inital) + ' ms* ');
+     await citel.reply('*Pong / سرعه التشغيل*\n *' + (final - inital) + ' ms* ');
    }
 }
