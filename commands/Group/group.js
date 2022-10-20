@@ -1,7 +1,7 @@
 const { tlang,getAdmin,prefix } = require('../../lib')
 
 module.exports = {
-    name: 'group',
+    name: 'قروب',
     category: 'group',
     desc: 'activates and deactivates group\nuse open or close option to toggle.',
     async exec(citel, Void,args) {
