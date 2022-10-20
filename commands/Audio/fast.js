@@ -3,7 +3,7 @@ const fs = require('fs')
 const { exec } = require('child_process')
 
 module.exports = {
-    name: 'fast',
+    name: 'تسريع',
     category: 'audio',
     desc: 'Adds fast(equilizer) in quoted audio.[reduce distortion by equalizing its response over a specified frequency range.]',
     use: '<reply to audio>',
@@ -32,7 +32,7 @@ module.exports = {
         });
       } else
         citel.reply(
-          `Reply to the audio you want to change with.*`
+          `منشن المسج يلي تبغا تغيره.*`
         );
     }
  }
