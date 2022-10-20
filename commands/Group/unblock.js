@@ -1,7 +1,7 @@
 const { tlang } = require('../../lib')
 
 module.exports = {
-    name: 'unblock',
+    name: 'فك',
     category: 'owner',
     desc: 'Unblocked to the quoted user..',
     async exec(citel, Void,args,isCreator) {
