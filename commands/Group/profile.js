@@ -16,11 +16,11 @@ module.exports = {
 			  let haigu = require('./lib/core')
 		 idd = huh.haig
 			} catch {
-			  idd = 'No Haigusha'
+			  idd = 'لست احمق'
   
            }
-			let hgg = idd.haig || 'No Haigusha'
-			const adn = isAdmins ? "True" : "False";
+			let hgg = idd.haig || 'لست احمق'
+			const adn = isAdmins ? "ادمن" : "عضو";
 			let meh = citel.sender;
 			   const userq = await Levels.fetch(citel.sender, "RandomXP");
 			   const lvpoints = userq.level;
@@ -109,17 +109,17 @@ module.exports = {
 				pfp = await botpic();
 			}
 			const profile = `
-*Hii ${citel.pushName},*
-*Here is your profile information*
-*👤Username:* ${citel.pushName}
-*⚡Bio:* ${bioo}
-*☘️Group:*  ${groupName}
-*🦸Admin* ${adn}
-*🍀Haigusha* ${hgg}
-*🧩Role:* ${role}
-*🍁Level:* ${userq.level}
-*📥 Total Messages* ${ttms}
-*Powered by ${tlang().title}*
+*هلا ${citel.pushName},*
+*معرف البروفايل :*
+*👤الاسم:* ${citel.pushName}
+*⚡البايو:* ${bioo}
+*☘️قروب:*  ${groupName}
+*🦸ادمن* ${adn}
+*🍀احمق* ${hgg}
+*🧩المستوى:* ${role}
+*🍁الفل:* ${userq.level}
+*📥 مجموع الرسائل * ${ttms}
+*الصانع: ${tlang().title}*
 `;
 			const buttonsd = [
 				{
