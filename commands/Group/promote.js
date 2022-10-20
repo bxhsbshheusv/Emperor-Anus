@@ -12,7 +12,7 @@ module.exports = {
 			const isAdmins = citel.isGroup ? groupAdmins.includes(citel.sender) : false;
 
 
-        if (!citel.quoted) return citel.reply("Please reply to user");
+        if (!citel.quoted) return citel.reply("Please reply to user / رجاء منشن الرقم");
         if (!isAdmins) return citel.reply(tlang().admin);
         if (!isBotAdmins) return citel.reply(tlang().botAdmin);
         let users = citel.mentionedJid[0] ? citel.mentionedJid[0] : citel.quoted ? citel.quoted.sender : args.join(" ").replace(/[^0-9]/g, "") + "@s.whatsapp.net";
