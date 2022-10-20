@@ -1,7 +1,7 @@
 const { tlang } = require('../../lib')
 
 module.exports = {
-    name: 'join',
+    name: 'ادخل',
     category: 'owner',
     desc: 'joins given group link.',
     async exec(citel,Void,args,isCreator) {
