@@ -1,7 +1,7 @@
 const { tlang,getAdmin,prefix } = require('../../lib')
 
 module.exports = {
-    name: 'nsfw',
+    name: 'اباحي🔞',
     category: 'misc',
     desc: 'activates and deactivates nsfw.\nuse buttons to toggle.',
     async exec(citel, Void,args) {
@@ -17,19 +17,19 @@ module.exports = {
 					{
 						buttonId: `${prefix}act nsfw`,
 						buttonText: {
-							displayText: "Turn On",
+							displayText: "فتح",
 						},
 						type: 1,
               },
 					{
 						buttonId: `${prefix}deact nsfw`,
 						buttonText: {
-							displayText: "Turn Off",
+							displayText: "قفل",
 						},
 						type: 1,
               },
             ];
-				await Void.sendButtonText(citel.chat, buttons, `Activate nsfw:18+ commands /تم تشغيل اوامر الاباحي:١٨+`, Void.user.name, citel);
+				await Void.sendButtonText(citel.chat, buttons, `تم تشغيل اوامر الاباحي:١٨+`, Void.user.name, citel);
 			}
     }
  }
