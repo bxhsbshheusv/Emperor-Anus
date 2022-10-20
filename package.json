@@ -19,7 +19,7 @@
     "bot-md",
     "multi-device"
   ],
-  "author": "SamPandey001",
+  "author": "light",
   "license": "GNU",
   "dependencies": {
     "@adiwajshing/baileys": "git+https://github.com/sampandey001/Baileys.git",
