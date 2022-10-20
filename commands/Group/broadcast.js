@@ -1,7 +1,7 @@
 const { tlang,sleep } = require('../../lib')
 
 module.exports = {
-    name: 'broadcast / رساله جماعيه ',
+    name: 'broadcast',
     category: 'owner',
     desc: 'Sends SECKTOR userbot group link.',
     async exec(citel, Void,args,isCreator) {
