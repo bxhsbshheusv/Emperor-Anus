@@ -4,7 +4,7 @@ const { prefix } = require('../../config')
 const Levels = require("discord-xp");
 const moment = require("moment-timezone");
 module.exports = {
-    name: 'profile',
+    name: 'بروفايل',
     category: 'group',
     desc: 'Shows profile of user.',
     async exec(citel, Void,args,groupName,isAdmins) {
