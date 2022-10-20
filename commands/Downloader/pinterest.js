@@ -3,12 +3,12 @@ const { prefix } = require('../../config')
 const Config = require('../../config')
 
 module.exports = {
-    name: 'pint',
+    name: 'بنترست',
     category: 'downloader',
     desc: 'Sends image from pinterest.',
     use: '<text>',
     async exec(citel, Void,args) {
-        if (!args.join(" ")) return reply("What picture are you looking for?") && Void.sendMessage(citel.chat, {
+        if (!args.join(" ")) return reply("اي صوره تبحث عنها?") && Void.sendMessage(citel.chat, {
             react: {
               text: '❌',
               key: citel.key
@@ -20,7 +20,7 @@ module.exports = {
                   {
                     buttonId: `${prefix}pint ${args.join(" ")}`,
                     buttonText: {
-                      displayText: 'Next Image🎀'
+                      displayText: 'الصوره التاليه🎀'
                     },
                     type: 1
               }
