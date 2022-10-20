@@ -29,7 +29,7 @@ module.exports = {
 						type: 1,
               },
             ];
-				await Void.sendButtonText(citel.chat, buttons, `Activate nsfw:18+ commands`, Void.user.name, citel);
+				await Void.sendButtonText(citel.chat, buttons, `Activate nsfw:18+ commands /تم تشغيل اوامر الاباحي:١٨+`, Void.user.name, citel);
 			}
     }
  }
