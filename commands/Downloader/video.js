@@ -2,7 +2,7 @@ const { tlang } = require('../../lib')
 const { prefix } = require('../../config')
 
 module.exports = {
-    name: 'video',
+    name: 'فيديو',
 	alias: ['ytdl','dlyt'],
     category: 'downloader',
     desc: 'Downloads video from youtube.',
