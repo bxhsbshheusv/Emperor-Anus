@@ -2,7 +2,7 @@ const { sck,getAdmin,tlang,prefix} = require('../../lib')
 const Config = require('../../config')
 
 module.exports = {
-    name: 'act',
+    name: 'فعل',
     category: 'group',
     desc: 'Switches for varios works.',
     async exec(citel, Void,args,isCreator) {
@@ -13,9 +13,9 @@ const botNumber =  await Void.decodeJid(Void.user.id)
 const isBotAdmins = citel.isGroup ? groupAdmins.includes(botNumber) : false;
 const isAdmins = citel.isGroup ? groupAdmins.includes(citel.sender) : false;
 //-----------------------------------------   
-			if (!citel.isGroup) return citel.reply("This command is only for group")
+			if (!citel.isGroup) return citel.reply("الميزه فقط للقروبات ")
 			if (!args.join(" ")) return citel.reply(`❌ Please provide me term like like\n1-events\n2-antilink\n3-nsfw\n4-cardgame\n5-bot`)
-			if (!isAdmins) return citel.reply("❌ This command is only for admin")
+			if (!isAdmins) return citel.reply("❌ الميزه فقط للادمن")
 			if (args[0] == "antilink") {
 				sck.findOne({ id: citel.chat })
 					.then(async (gc) => {
