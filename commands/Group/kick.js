@@ -1,7 +1,7 @@
 const { tlang,getAdmin,prefix } = require('../../lib')
 
 module.exports = {
-    name: 'kick',
+    name: 'طرد',
     category: 'group',
     desc: 'Kicks replied/quoted user from group.',
     async exec(citel, Void,args) {	    
