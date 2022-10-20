@@ -1,7 +1,7 @@
 const { tlang,getAdmin } = require('../../lib')
 
 module.exports = {
-    name: 'del',
+    name: 'احذف',
     category: 'group',
     desc: 'Deletes message of any user.',
     async exec(citel, Void,args,isAdmins) {
