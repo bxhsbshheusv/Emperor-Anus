@@ -30,12 +30,13 @@ module.exports = {
 			latensie = speed() - timestampe;
 			let ter = `
  🔰 *${tlang().title}* 🔰
-*🌟Description:* A WhatsApp bot with rich features, build in NodeJs to make your WhatsApp enjoyable.
-*⚡Speed:* ${latensie.toFixed(4)} ms
-*🚦Uptime:* ${runtime(process.uptime())}
-*🕸Version:* 1.0.0
-*👤Owner:*  ${Config.ownername}
-*Powered by ${tlang().title}*
+*🌟الوصف:* واتساب بوت ب مميزات كثيره, اصنع في NodeJs لصنع وتساب enjoyable.
+*♥️قروب الدعم , https://chat.whatsapp.com/IJnyOohnm2Y9F6MWgruFj5.
+*⚡السرعه:* ${latensie.toFixed(4)} ms
+*🚦مده التشغيل:* ${runtime(process.uptime())}
+*🕸الاصدار:* 1.0.0
+*👤المطور:*  ${Config.ownername}
+*تم تطويره بواسطه ${tlang().title}*
 `;
 			let buttonMessaged = {
 				image: {
