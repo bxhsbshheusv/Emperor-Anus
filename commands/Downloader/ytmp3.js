@@ -5,7 +5,7 @@ const ytdl = require('ytdl-core')
 const prefix = Config.prefix
 
 module.exports = {
-    name: 'لينك',
+    name: 'ytmp3',
     alias: ['mp3dl'],
     category: 'downloader',
     desc: 'Downloads audio from youtube.',
