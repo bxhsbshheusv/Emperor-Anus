@@ -1,7 +1,7 @@
 const { tlang } = require('../../lib')
 
 module.exports = {
-    name: 'support',
+    name: 'الدعم',
     category: 'weeb',
     desc: 'Sends SECKTOR userbot group link.',
     async exec(citel, Void,args) {
