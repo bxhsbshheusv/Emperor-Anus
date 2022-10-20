@@ -1,12 +1,12 @@
 const googleTTS = require("google-tts-api"); // CommonJS
 
 module.exports = {
-    name: 'tts',
+    name: 'صوتي',
     category: 'downloader',
     desc: 'Makes audio of Given text',
 	use: '<This is Secktor Userbot.>',
 	async exec(citel, Void,args) {
-        if (!args[0]) return citel.reply('Please give me Sentence to change into audio.')
+        if (!args[0]) return citel.reply('اعطيني رساله عشان احولها لمسج.')
         let texttts = args.join(" ")
 			const ttsurl = googleTTS.getAudioUrl(texttts, {
 				lang: "en",
