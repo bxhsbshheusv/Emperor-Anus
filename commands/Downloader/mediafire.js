@@ -2,7 +2,7 @@ const { tlang } = require('../../lib')
 const { mediafire } = require("../../lib/mediafire.js");
 
 module.exports = {
-    name: 'mediafire',
+    name: 'تحميل',
 	alias: ['mediafiredl','mfdl'],
     category: 'downloader',
     desc: 'Downloads zip from Mediafire and sends in chat.',
