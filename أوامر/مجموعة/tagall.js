@@ -15,11 +15,11 @@ module.exports = {
  let textt = `
  ══✪〘   *منشن جماعي*   〙✪══
 
-➲ *Message / الرساله :* ${args.join(" ") ? args.join(" ") : "لا يوجد"}\n\n
-➲ *Author:* ${citel.pushName} 🔖
+❐ *الرساله :* ${args.join(" ") ? args.join(" ") : "لا توجد رساله"}\n\n
+❐ *صاحب المنشن:* ${citel.pushName} 🔖
 `
         for (let mem of participants) {
-            textt += `✨ @${mem.id.split("@")[0]}\n`;
+            textt += `🗿 @${mem.id.split("@")[0]}\n`;
         }
         Void.sendMessage(citel.chat, {
             text: textt,
