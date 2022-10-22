@@ -6,7 +6,7 @@ let { fancytext,botpic,tlang } = require("../../lib");
  
 module.exports = {
     name: "help",
-    alias: ["h", "cmd", "menu"],
+    alias: ["h", "cmd", "menu", "الاوامر", "اوامر"],
     category: "general",
     async exec(citel, Void, args) {
         if (args.join(' ')) {
