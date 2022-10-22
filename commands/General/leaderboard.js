@@ -10,7 +10,7 @@ module.exports = {
     const fetchlb = await Levels.fetchLeaderboard("RandomXP", 5);
     let leadtext = `
   *-------------------------------*
-  *----● LeaderBoard ● -----*
+  *----● لوحة الصداره ● -----*
   *-------------------------------*
   \n\n`
     for (let i = 0; i < fetchlb.length; i++) {
@@ -23,10 +23,10 @@ module.exports = {
         var role = "👼Baby Wizard";
       }
       else if (lvpoints <= 6) {
-        var role = "🧙‍♀️Wizard";
+        var role = "🧙‍♀️ساحر";
       }
       else if (lvpoints <= 8) {
-        var role = "🧙‍♂️Wizard Lord";
+        var role = "🧙‍♂️سيد السحره";
       }
       else if (lvpoints <= 10) {
         var role = "🧚🏻Baby Mage";
