@@ -3,11 +3,11 @@ const {Sticker,createSticker,StickerTypes} = require("wa-sticker-formatter");
 
 module.exports = {
     name: 'ستيكر',
-    alias: ["s"],
+    alias: ["s","sticer","ملصق","س"],
     category: 'sticker',
-    desc: 'Makes sticker of replied image/video.',
+    desc: 'ارسل صوره او فيديو وسوي الأمر وستتخول لملصق.',
     async exec(citel, Void,args) {
-        if (!citel.quoted) return citel.reply(`*Mention any Image or video Sir.*`);
+        if (!citel.quoted) return citel.reply(`*يزق منشن فيديو او صوره.*`);
         let mime = citel.quoted.mtype
 
             pack = Config.packname
