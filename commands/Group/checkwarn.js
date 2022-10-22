@@ -13,10 +13,10 @@ teskd = `*All Warnings.*\n\n`
 console.log(h)
   teskd += `*There are total ${h.length}  warnings.*\n`
   for(let i=0;i<h.length;i++) {
-  teskd += `*${i+1}*\n╭─────────────◆\n│ *🍁In Group:-* ${h[i].group}\n`
-  teskd += `│ *🔰Time:-* ${h[i].date}\n`
-  teskd += `│ *⚠️Warned by:-* ${h[i].warnedby}\n`
-  teskd += `│ _📍Reason: ${h[i].reason}_\n╰─────────────◆\n\n`
+  teskd += `*${i+1}*\n╭─────────────◆\n│ *🍁قروب:-* ${h[i].group}\n`
+  teskd += `│ *🔰الوقت:-* ${h[i].date}\n`
+  teskd += `│ *⚠️انذار من:-* ${h[i].warnedby}\n`
+  teskd += `│ _📍السبب: ${h[i].reason}_\n╰─────────────◆\n\n`
   }
 citel.reply(teskd)
  }
