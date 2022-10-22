@@ -93,7 +93,7 @@ module.exports = {
     let getname = await Void.getName(namew)
     console.log(getname)
      let ttms = fetchlb[i].xp/8
-    leadtext += `*${i + 1}●Name*: ${getname}\n*●Level*: ${fetchlb[i].level}\n*●Points*: ${fetchlb[i].xp}\n*●Role*: ${role}\n*●Total messages*: ${ttms}\n\n`;
+    leadtext += `*${i + 1}●الأسم*: ${getname}\n*●المستوى*: ${fetchlb[i].level}\n*●نقاطه*: ${fetchlb[i].xp}\n*●دور*: ${role}\n*●عدد الرسائل*: ${ttms}\n\n`;
   }
     citel.reply(leadtext)
    }
