@@ -10,7 +10,7 @@ module.exports = {
 			const buffer = await getBuffer(data.images[Math.floor(Math.random() * data.images.length)]?.url)
 			Void.sendMessage(citel.chat, {
 				image: buffer,
-				caption: '*Here we go*',
+				caption: '*وايفو*',
 				footer: tlang().footer,
 			}, {
 				quoted: citel
