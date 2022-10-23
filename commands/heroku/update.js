@@ -5,6 +5,7 @@ const DB = require('../../lib/scraper')
 const { execSync } = require('child_process')
 module.exports = {
    name: 'تحديث',
+alias: ["حدث","up","update","date"],
    category: 'owner',
    desc: 'Shows repo\'s refreshed commits.',
    async exec(citel, Void,args,isCreator) {
