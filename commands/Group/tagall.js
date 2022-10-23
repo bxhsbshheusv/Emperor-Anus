@@ -2,7 +2,6 @@ const { tlang,getAdmin } = require('../../lib')
 
 module.exports = {
     name: 'منشن',
-alias: ["تاج","تاك","تاغ","🗿"],
     category: 'group',
     desc: 'Tags every person of group.',
     async exec(citel, Void,args,isGroup) {
