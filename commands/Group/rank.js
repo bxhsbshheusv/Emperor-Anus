@@ -12,17 +12,16 @@ module.exports = {
         const lvpoints = userq.level;
         var role = "GOD✨";
         if (lvpoints <= 2) {
-            var role = "🏳Citizen";
+            var role = "🏳مواطن";
         }
         else if (lvpoints <= 4) {
-            var role = "👼Baby Wizard";
+            var role = "👼طفل عظيم";
         }
         else if (lvpoints <= 6) {
-            var role = "🧙‍♀️Wizard";
+            var role = "🧙‍♀️ساحر";
         }
         else if (lvpoints <= 8) {
-            var role = "🧙‍♂️Wizard Lord";
-        }
+            var role = "🧙‍♂️ساحر كبير
         else if (lvpoints <= 10) {
             var role = "🧚🏻Baby Mage";
         }
@@ -86,15 +85,15 @@ module.exports = {
         let disc = citel.sender.substring(3, 7);
         let textr = "";
         if (pushname) {
-            textr += `*Hii ${tlang().greet} ,🌟 ${citel.pushName}∆${disc}'s* Exp\n\n`;
+            textr += `*هلا ${tlang().greet} ,🌟 ${citel.pushName}∆${disc}'s* Exp\n\n`;
         }
         else {
             textr += `*${citel.pushName}∆${disc}'s* Exp\n\n`;
         }
         let ttms = `${userq.xp}` / 8;
-        textr += `*🌟Role*: ${role}\n*🟢Exp*: ${userq.xp} / ${Levels.xpFor(
+        textr += `*🌟دور*: ${role}\n*🟢إكسب*: ${userq.xp} / ${Levels.xpFor(
         userq.level + 1
-      )}\n*🏡Level*: ${userq.level}\n*Total Messages:*- ${ttms}`;
+      )}\n*🏡المستوى*: ${userq.level}\n*عدد الرسائل:*- ${ttms}`;
         try {
             ppuser = await Void.profilePictureUrl(citel.sender, "image");
         }
