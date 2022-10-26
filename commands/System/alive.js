@@ -9,15 +9,15 @@ module.exports = {
         const aliveadm = isAdmins ? "True" : "False";
 			let alivemessage = process.env.ALIVE_MESSAGE || `*A bot developed by SamPandey001.*`
 			const alivtxt = `
-*Hello, my ${citel.pushName},*
-*This is  ${tlang().title}.*
+*مرحباً يا ${citel.pushName},*
+*في  ${tlang().title}.*
 ${alivemessage}
-*❖Version:-* 0.0.3
-*❖Uptime:-* ${runtime(process.uptime())}
-*❖Owner:-* ${Config.ownername}
-*❖Branch:-* ${Config.BRANCH}
-*❖Edition:-* PUBLIC
-*Type ${prefix}menu for my command list.*
+*❖الأصدار:-* 0.0.3
+*❖الوقت:-* ${runtime(process.uptime())}
+*❖المالك:-* ${Config.ownername}
+*❖فرع:-* ${Config.BRANCH}
+*❖النوع:-* عام
+*للحصول ${prefix}على الأوامر اكتب .الاوامر.*
     
 *Powered by ${Config.ownername}*
     `;
