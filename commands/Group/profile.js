@@ -20,7 +20,7 @@ module.exports = {
   
            }
 			let hgg = idd.haig || 'لست احمق'
-			const adn = isAdmins ? "ادمن" : "عضو";
+			const adn = isAdmins ? "مشرف" : "عضو";
 			let meh = citel.sender;
 			   const userq = await Levels.fetch(citel.sender, "RandomXP");
 			   const lvpoints = userq.level;
@@ -110,15 +110,15 @@ module.exports = {
 			}
 			const profile = `
 *هلا ${citel.pushName},*
-*معرف البروفايل :*
+*معلومات البروفايل :*
 *👤الاسم:* ${citel.pushName}
 *⚡البايو:* ${bioo}
 *☘️قروب:*  ${groupName}
 *🦸ادمن* ${adn}
 *🍀احمق* ${hgg}
 *🧩المستوى:* ${role}
-*🍁الفل:* ${userq.level}
-*📥 مجموع الرسائل * ${ttms}
+*🍁لفل:* ${userq.level}
+*📥 عدد الرسائل * ${ttms}
 *الصانع: ${tlang().title}*
 `;
 			const buttonsd = [
