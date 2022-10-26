@@ -62,25 +62,25 @@ module.exports = {
             var role = "🏆Ace Supreme";
         }
         else if (lvpoints <= 36) {
-            var role = "💍Supreme I";
+            var role = "💍المعلم الأول";
         }
         else if (lvpoints <= 38) {
-            var role = "💎Supreme Ii";
+            var role = "💎المعلم الثاني";
         }
         else if (lvpoints <= 40) {
-            var role = "🔮Supreme Master";
+            var role = "🔮المعلم الاعلى";
         }
         else if (lvpoints <= 42) {
-            var role = "🛡Legend III";
+            var role = "🛡الأسطوره الثالثه";
         }
         else if (lvpoints <= 44) {
-            var role = "🏹Legend II";
+            var role = "🏹الأسطوره الثانيه";
         }
         else if (lvpoints <= 46) {
-            var role = "⚔Legend";
+            var role = "⚔اسطوره";
         }
         else if (lvpoints <= 55) {
-            var role = "🐉Immortal";
+            var role = "🐉الأعظم";
         }
         let disc = citel.sender.substring(3, 7);
         let textr = "";
