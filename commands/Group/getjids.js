@@ -11,14 +11,14 @@ module.exports = {
             .slice(0)
             .map((entry) => entry[1]);
         let anu = groups.map((v) => v.id);
-        let jackhuh = `All groups jid\n\n`
-        citel.reply(`Fetching jid from ${anu.length} Groups`)
+        let jackhuh = `كل القروبات اللي انا فيها\n\n`
+        citel.reply(`جلب معلومات  ${anu.length} قروب`)
         for (let i of anu) {
           let metadata = await Void.groupMetadata(i);
             await sleep(500)
-            jackhuh += `*Subject:-* ${metadata.subject}\n`
-            jackhuh += `*Member :* ${metadata.participants.length}\n`
-            jackhuh += `*Jid:-* ${i}\n\n`
+            jackhuh += `*الأسم:-* ${metadata.subject}\n`
+            jackhuh += `*اعضاء :* ${metadata.participants.length}\n`
+            jackhuh += `*دخول:-* ${i}\n\n`
             
     }
     citel.reply(jackhuh)
