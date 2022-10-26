@@ -3,7 +3,7 @@ const axios = require('axios')
 const Levels = require("discord-xp");
 
 module.exports = {
-   name: 'leaderboard',
+   name: 'الرتب',
    category: 'general',
    desc: 'Shows leaderboard of top bot users.',
    async exec(citel, Void,args) {
