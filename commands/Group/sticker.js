@@ -2,7 +2,7 @@ const Config = require('../../config')
 const {Sticker,createSticker,StickerTypes} = require("wa-sticker-formatter");
 
 module.exports = {
-    name: 'ستيكر',
+    name: 'ملصق',
     category: 'sticker',
     desc: 'ارسل صوره او فيديو وسوي الأمر وستتخول لملصق.',
     async exec(citel, Void,args) {
