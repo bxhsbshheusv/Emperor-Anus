@@ -15,11 +15,11 @@ module.exports = {
             const { commands, prefix } = djs;
             console.log(name)
             const cmd = commands.get(name) || commands.find((cmd) => cmd.alias && cmd.alias.includes(name));
-            if (!cmd || cmd.category === "private") return await citel.reply("*❌No Such commands.*");
+            if (!cmd || cmd.category === "private") return await citel.reply("*❌حدث خطأ.*");
             else data.push(`*🍁Command:* ${cmd.name}`);
-            if (cmd.alias) data.push(`*🔰Alias:* ${cmd.alias.join(', ')}`);
-            if (cmd.desc) data.push(`*🧩Description:* ${cmd.desc}`);
-            if (cmd.use) data.push(`*〽️Usage:* \`\`\`${prefix}${cmd.name} ${cmd.use}\`\`\`\n\nNote: [] = optional, | = or, <> = must filled`);
+            if (cmd.alias) data.push(`*🔰الإسم المستعار:* ${cmd.alias.join(', ')}`);
+            if (cmd.desc) data.push(`*🧩وصف:* ${cmd.desc}`);
+            if (cmd.use) data.push(`*〽️استعمال :* \`\`\`${prefix}${cmd.name} ${cmd.use}\`\`\`\n\nNote: [] = optional, | = or, <> = must filled`);
 
             return await citel.reply(data.join('\n'));
         } else {
@@ -40,12 +40,12 @@ module.exports = {
 let str = `╭━━〘 `+ fancytext(Config.ownername.split(' ')[0],58) +` 〙━━──⊷`     
 str+=
 `
-┃ *Hello, ${citel.pushName}*
-┃ *This is ${tlang().title}*
-┃ *A whatsapp bot developed*
-┃ *by ${Config.ownername}*
-┃ 𝙼𝚢 𝚞𝚜𝚊𝚋𝚕𝚎 𝚌𝚘𝚖𝚖𝚊𝚗𝚍𝚜 𝚊𝚛𝚎
-┃ 𝚕𝚒𝚜𝚝𝚎𝚍 𝚋𝚎𝚕𝚘𝚠
+┃ *مرحبا, ${citel.pushName}*
+┃ *انا اسمي ${tlang().title}*
+┃ *تم تطويري بواسطة الامبراطور انوس 🤭*
+┃ *يحبكم😍 ${Config.ownername}*
+┃ الي يحبني يرفع يده😂
+┃انا عم الجميع هنا 😂
 ╰━━━━━━━━━━━──⊷\n`
             const keys = Object.keys(category);
  str += `╭───『 `+ fancytext('Commands',57)+`』──◆`
@@ -60,17 +60,18 @@ str += `
 ┃ ⿻ ╰─────────────◆`
             }
 str += `\n╰━━━━━━━━━━━──⊷\n`
-str += `_🔖Send ${prefix}help <command name> to get detailed information of specific command._\n*📍Eg:* _${prefix}help anime_`;
+str += `_🔖إرسال ${prefix} <اسم الأمر> للحصول على معلومات مفصلة عن أمر معين.
+*📍Eg:* _.مساعدة أنيمي_* _${prefix}help anime_`;
             let generatebutton = [{
-					buttonId: `${prefix}owner`,
+					buttonId: `${prefix}المطور`,
 					buttonText: {
-						displayText: 'Owner'
+						displayText: 'المطور👤'
 					},
 					type: 1
 				},{
-					buttonId: `${prefix}list`,
+					buttonId: `${prefix}قائمة`,
 					buttonText: {
-						displayText: 'List Menu'
+						displayText: 'الاوامر'
 					},
 					type: 1
 				}
