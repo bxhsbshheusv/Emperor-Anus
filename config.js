@@ -8,11 +8,11 @@ global.port= process.env.PORT || 5000
 global.email = 'sam@secktor.live'
 global.github = 'https://chat.whatsapp.com/CMp1e9NHmHU5K5sCM2mmKn'
 global.location = 'Sultanpur IN'
-global.sudo = process.env.SUDO || '967770500831'
-global.website = 'https://chat.whatsapp.com/CMp1e9NHmHU5K5sCM2mmKn' //wa.me/+967770500831
+global.sudo = process.env.SUDO || '967730348571'
+global.website = 'https://chat.whatsapp.com/JUngwIYTMVzCxMuismJuOY' //wa.me/+697730348571 
 module.exports = {
-  botname: process.env.BOT_NAME || '🔱 𝚁𝚊𝚒𝚣𝚎𝚕 𝙱𝙾𝚃 🔱',
-  ownername:process.env.OWNER_NAME || '🔱 𝚁𝚊𝚒𝚣𝚎𝚕 𝙶𝚎𝚘𝚛𝚐𝚎 🔱',
+  botname: process.env.BOT_NAME || '「⚜️」𒆜ËMPËŖÖŖ ÄŅŮŚ',
+  ownername:process.env.OWNER_NAME || '「⚜️」𒆜ËMPËŖÖŖ ÄŅŮŚ',
   sessionName: process.env.SESSION_ID || 'PUT-HERE',
   author: process.env.PACK_INFO.split(";")[0], 
   packname: process.env.PACK_INFO.split(";")[1],
